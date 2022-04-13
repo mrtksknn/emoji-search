@@ -3,7 +3,7 @@ import '@testing-library/jest-dom';
 import userEvent from "@testing-library/user-event";
 import React from "react";
 import App from '../App'
-test('filter işlemi doğru çalışmalı', () => {
+test('the filter function should work correctly', () => {
     render(<App />)
     const inputEl=screen.getByTestId("inputid")
     userEvent.type(inputEl,"Mask");

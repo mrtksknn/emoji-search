@@ -1,6 +1,6 @@
 import emojiList from "./EmojiList.json";
 
-export default function filterEmoji(searchText, maxResults) {
+const filterEmoji = (searchText, maxResults) => {
   return emojiList
     .filter(emoji => {
       if (emoji.title.toLowerCase().includes(searchText.toLowerCase())) {
@@ -13,3 +13,5 @@ export default function filterEmoji(searchText, maxResults) {
     })
     .slice(0, maxResults);
 }
+
+export default filterEmoji;
